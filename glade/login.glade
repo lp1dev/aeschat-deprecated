@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.18.3 -->
+<interface>
+  <requires lib="gtk+" version="3.12"/>
+  <object class="GtkDialog" id="keystoreDialog">
+    <property name="can_focus">False</property>
+    <property name="type_hint">dialog</property>
+    <property name="deletable">False</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="dialog-vbox1">
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="dialog-action_area1">
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkButton" id="keystoreButton">
+                <property name="label">gtk-apply</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <property name="use_stock">True</property>
+                <signal name="clicked" handler="create_keystore" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="box2">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel" id="label1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">AESChat needs to create a KeyStore file to keep your contacts passwords
+and IP addresses. 
+The one you selected in the conf.py file does not exists ,
+please enter the password you want to use to crypt the file.</property>
+                <property name="ellipsize">end</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="keystorePasswordEntry">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="opacity">0.83999999999999997</property>
+                <property name="halign">baseline</property>
+                <property name="margin_top">50</property>
+                <property name="visibility">False</property>
+                <property name="invisible_char">●</property>
+                <property name="max_width_chars">40</property>
+                <property name="shadow_type">none</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="keystorePasswordNotificationLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkDialog" id="loginWindow">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="type_hint">dialog</property>
+    <property name="gravity">center</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="dialog-vbox2">
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="dialog-action_area2">
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkButton" id="loginButton">
+                <property name="label" translatable="yes">Login</property>
+                <property name="related_action"/>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="resize_mode">immediate</property>
+                <property name="relief">half</property>
+                <property name="use_underline">True</property>
+                <property name="xalign">0.40000000596046448</property>
+                <property name="yalign">0.52999997138977051</property>
+                <signal name="clicked" handler="login_click" swapped="no"/>
+                <signal name="destroy" handler="on_mainWindow_destroy" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="box1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel" id="loginText">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="valign">baseline</property>
+                <property name="label" translatable="yes">Nickname</property>
+                <property name="ellipsize">end</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="loginEntry">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">center</property>
+                <property name="progress_pulse_step">0.029999999999999999</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="passText">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">KeyStore Password</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="passEntry">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">center</property>
+                <property name="margin_bottom">34</property>
+                <property name="visibility">False</property>
+                <property name="invisible_char">●</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="loginNotification">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="valign">baseline</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
